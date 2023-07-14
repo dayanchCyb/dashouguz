@@ -1,0 +1,51 @@
+//===============fonts=================
+$fontFamily: 'Inter';
+//
+//
+@import '_mixins';
+@import '_colors';
+@import '_null';
+@import '_fonts';
+//
+//
+//
+//
+//
+body {
+  position: relative;
+  top: 0px;
+  background-color: var(--background);
+  overflow-x: hidden;
+  &._lock {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+.__container {
+  max-width: 1430px;
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+	position: relative;
+}
+
+.pr {
+  position: relative;
+}
+//===========import-files=========================//
+@import '_header';
+@import '_banner';
+@import '_services';
+@import '_about';
+@import '_other-routes';
+@import '_orders';
+@import '_contact';
+@import '_companies';
+@import '_footer';
+@import '_transports';

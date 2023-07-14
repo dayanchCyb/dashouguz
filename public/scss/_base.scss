@@ -1,0 +1,71 @@
+.title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+  color: var(--primary-red);
+  text-align: center;
+  padding-bottom: 10px;
+  @include adaptiv-value('font-size', 42, 20, 1);
+  @include adaptiv-value('padding-bottom', 10, 6, 1);
+}
+.sub-title {
+  font-family: $fontFamilyThird;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--text-color);
+  margin: 0px auto;
+  @include adaptiv-value('font-size', 20, 12, 1);
+  @include adaptiv-value('width', 507, 244, 1);
+}
+
+.animation {
+  padding-top: 14px;
+  width: 100px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  span {
+    display: block;
+    border-top: 2px solid var(--primary-red);
+    width: 100%;
+    text-align: center;
+    animation: mini 1.5s linear infinite;
+    &:nth-child(2) {
+      border-top: 2px solid var(--primary-red);
+      margin-top: 4px;
+      width: 70%;
+      text-align: center;
+      animation: big 1.5s linear infinite;
+    }
+  }
+}
+@keyframes mini {
+  0% {
+    width: 100%;
+  }
+
+  50% {
+    width: 70%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+@keyframes big {
+  0% {
+    width: 70%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
